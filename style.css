@@ -1,0 +1,233 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  color: #969696;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 10px;
+}
+
+#desc {
+  font-weight: 500;
+}
+
+#gameButtonArea {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  /*  NEED TO WORK ON FLEXBOX
+  min-height: 900px;
+  min-width: 600;
+  max-height: 1200px;
+  max-width: 800px; */
+}
+
+.white {
+  border-radius: 10px;
+  height: 50vh;
+  width: 8vw;
+  border: 1px solid gray;
+}
+
+.black {
+  background-image: linear-gradient(to bottom right, snow, slategrey);
+  border: 1px solid gray;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 25vh;
+  width: 4vw;
+  margin-left: -2vw;
+  margin-right: -2vw;
+  z-index: 2;
+  /* z-index idea taken from this video:
+  https://www.youtube.com/watch?v=vjco5yKZpU8
+  */
+}
+
+.black:active,
+.black.lit {
+  background-image: linear-gradient(to bottom right, snow, lightgrey);
+}
+
+#startBtn,
+#stopBtn {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background: slategrey;
+  color: white;
+  margin: 10px;
+  border: none;
+}
+
+#startBtn {
+  color: green;
+  background: #cbf9d7;
+}
+
+#stopBtn {
+  color: red;
+  background: #f7c3d4;
+}
+
+#startBtn:active {
+  background: #32cd32;
+  color: black;
+}
+
+#stopBtn:active {
+  background: #ff4040;
+  color: black;
+}
+
+#button1 {
+  /*   gradient syntax from https://www.w3schools.com/css/css3_gradients.asp */
+  background-image: linear-gradient(to bottom, snow, #ffdcb5);
+}
+
+#button1:active,
+#button1.lit {
+  background: #ef9f60;
+}
+
+#button3 {
+  background-image: linear-gradient(to bottom, white, #f4b0b4);
+}
+
+#button3:active,
+#button3.lit {
+  background: #aa5569;
+}
+
+#button5 {
+  background-image: linear-gradient(to bottom, white, #f3d2e7);
+}
+
+#button5:active,
+#button5.lit {
+  background: #e47ab4;
+}
+
+#button6 {
+  background-image: linear-gradient(to bottom, white, #d2bef3);
+}
+
+#button6:active,
+#button6.lit {
+  background: #7b56c3;
+}
+
+#button8 {
+  background-image: linear-gradient(to bottom, white, #c2d5fa);
+}
+
+#button8:active,
+#button8.lit {
+  background: #637fb1;
+}
+
+#button10 {
+  background-image: linear-gradient(to bottom, white, #dff8ff);
+}
+
+#button10:active,
+#button10.lit {
+  background: #65bbf3;
+}
+
+#button12 {
+  background-image: linear-gradient(to bottom, white, #b9ffd3);
+}
+
+#button12:active,
+#button12.lit {
+  background: #68d09e;
+}
+
+.hidden {
+  display: none;
+}
+
+#controlBar {
+  padding: 20px;
+  background: #e2e2e2;
+  border-radius: 10px;
+  margin: 20px;
+  /*
+  css below adapted from:
+  https://stackoverflow.com/questions/16244860/top-align-text-within-button-element
+  */
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+#selectSong {
+  margin: 10px;
+  font-size: 16px;
+  background: #fafafa;
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+#to-go {
+  background: black;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#strike-number {
+  background: slategrey;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 40px;
+  padding-bottom: 30px;
+  position: 0;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}

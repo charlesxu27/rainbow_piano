@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- imported custom Google font -->
+    <!-- citation: https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html -->
+    
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rainbow Piano</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- this is the start of content -->
+    <h1>Rainbow Piano</h1>
+    <p id="desc">
+      Welcome to Rainbow Piano: Learn the piano by repeating back the pattern
+      you see and hear! Read our
+      <a
+        href="https://cdn.glitch.global/b478d990-e176-4ff8-9620-0dc520557cad/mozart-testimonial.jpg?v=1648099414258"
+        >testimonials</a
+      >.
+    </p>
+    <div id="controlBar">
+      <div>
+        <button id="startBtn" onclick="startGame()">Start</button>
+        <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+        <span id="select-song-bar">
+          <!-- The code in select element adapted from: https://stackoverflow.com/questions/3518002/
+        how-can-i-set-the-default-value-for-an-html-select-element and https://stackoverflow.com/
+        questions/36164514/putting-value-of-select-tag-into-javascript-variable
+        -->
+          <select
+            id="selectSong"
+            selected="Mary Had a Little Lamb"
+            onchange="setSong(this.value)"
+          >
+            <option value="">Select a song to learn</option>
+            <option value="0">Mary Had a Little Lamb (long)</option>
+            <option value="1">Für Elise (short)</option>
+            <option value="2">Harry Potter Theme (medium)</option>
+            <option value="3">Happy Birthday! (medium)</option>
+            <option value="4">Random Song</option>
+          </select>
+        </span>
+        <span id="strike-number"> Strikes: 0/3 </span>
+        <span id="to-go"> To Go: 0 notes </span>
+      </div>
+    </div>
+
+    <div id="gameButtonArea">
+      <button
+        class="white"
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="black"
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="white"
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="black"
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="white"
+        id="button5"
+        onclick="guess(5)"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="white"
+        id="button6"
+        onclick="guess(6)"
+        onmousedown="startTone(6)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="black"
+        id="button7"
+        onclick="guess(7)"
+        onmousedown="startTone(7)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="white"
+        id="button8"
+        onclick="guess(8)"
+        onmousedown="startTone(8)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="black"
+        id="button9"
+        onclick="guess(9)"
+        onmousedown="startTone(9)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="white"
+        id="button10"
+        onclick="guess(10)"
+        onmousedown="startTone(10)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="black"
+        id="button11"
+        onclick="guess(11)"
+        onmousedown="startTone(11)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        class="white"
+        id="button12"
+        onclick="guess(12)"
+        onmousedown="startTone(12)"
+        onmouseup="stopTone()"
+      ></button>
+    </div>
+    <footer>© Charles Xu 2022 Prework Project</footer>
+  </body>
+</html>
