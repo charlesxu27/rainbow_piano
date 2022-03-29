@@ -99,7 +99,7 @@ I decided to transform the light and sound game from a competitive web experienc
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [Charles Xu]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
