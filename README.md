@@ -35,10 +35,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Memory game has a piano-learning theme with buttons from C4 to B4
+- [x] Memory game has a piano-learning theme with keys from C4 to B4
 - [x] Dropdown menu for user to select one of four songs to learn
 - [x] Option for computer to choose a random song from the list
-- [x] Notes To Go counter to show user how many notes are left in the song
+- [x] Updates "To Go" counter to show user how many notes are left in the song
 - [x] Frequencies represent actual piano key frequencies
 
 ## Video Walkthrough (GIF)
