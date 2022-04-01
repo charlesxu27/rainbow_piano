@@ -1,6 +1,7 @@
 # Pre-work - _Memory Game_
 
-**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program.
+**Rainbow Piano** is a musical game based on the Light & Sound Memory game to apply for CodePath's SITE Program.
+Users will learn to play the piano by repeating back the pattern they hear!
 
 Submitted by: **Charles Xu**
 
