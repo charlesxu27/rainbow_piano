@@ -56,7 +56,7 @@ GIF of other features
 
 ## Reflection Questions
 
-1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
+### 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 My sources are cited inline but here is the entire list:
 
 * https://stackoverflow.com/questions/3518002/
@@ -69,14 +69,14 @@ My sources are cited inline but here is the entire list:
 * css gradient from https://www.w3schools.com/css/css3_gradients.asp
 * I have previously completed some of the HTML and CSS modules in The Odin Project, so I drew the majority of my existing web development knowledge from their curriculum. https://www.theodinproject.com
 
-2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
+### 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
 - Coming from a background in Python and Java, I found it challenging to visualize and connect the front-end view with the back-end logic. It's relatively simple to create HTML elements and style them with CSS, but it's much more complicated to, for example, update the playClueSequence() function in the backend to play a specific song the user selected via a dropdown menu. The most challenging problem in this sense was implementing a “random” option in the song-selection dropdown menu. When selected, the “random” menu would trigger a function in the javascript file that generates a random integer between 0 and 3 and then update the playClueSequence() function to play the corresponding song.
 I didn’t have a clear idea where to start, so I reviewed what I knew about event handlers and accessing DOM elements by looking at the relevant Mozilla Developer Network documentation and then searching for specific commands on stackoverflow. 
 - After spending a few hours researching event handlers and other "select" tag attributes, I narrowed my approaches to three actions: (1) implement an onchange event handler to call the randomGenerator function (2) access and modify the “random” HTML element via DOM methods, and (3) mirror the structure of the other select options and implement the logic in the javascript file. In the first approach, I ran into problems finding an appropriate element attribute to call a function from that didn’t involve using a javascript framework. I didn’t want to introduce another complication to the program, so I moved on to the second approach. While it was certainly possible to modify the DOM element and change the “random” option’s value, it didn’t make sense to grab the user’s input, invoke a backend function, update the front-end, and then invoke another backend function. In the end, I decided for the third approach, which kept my existing logic in place and just required me to add a few conditionals to catch a situation when the “random” option was selected and feed in a random integer to the playClueSequence() function. 
 - One lesson I learned from overcoming this challenge is that before implementing a possible solution, I should visualize it and see if my mind can follow the logic. In this case, I sketched a rough diagram with arrows showing how data is passed and modified between the HTML and JS files.
 
-3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
+### 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
 
 - After implementing the memory game, I’m curious how web development teams work together to develop a full-stack application. From this project, it seems that wiring the front-end and the back-end involves complete understanding of how each end works. I’m hoping that as a SITE intern, I can learn more about the processes to get a project off the ground and the different ways to organize developers to make sure they are in constant communication with each other, especially if they specialize in only the front or back end.
 
@@ -84,7 +84,7 @@ I didn’t have a clear idea where to start, so I reviewed what I knew about eve
 
 - Finally, while implementing this game, I kept thinking about how this game involves both visual and auditory cues for the web experience and can be hard to navigate for people using screen readers or people who don’t have the right device. I wonder if all web developers and companies emphasize site accessibility and accessible features. In the industry, is accessibility discussed at every stage in the development process?
 
-4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
+### 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
 I decided to transform the light and sound game from a competitive web experience to a didactic web experience. Using colors, lights, and sounds, my Rainbow Piano app tries to teach piano by making each key unique and making sure students are not overwhelmed by learning one step — or one key — at a time.
 
 - If my objective was to mimic the sound of the piano, I would definitely upload audio files representing each key on an actual piano. Right now, the computer-generated frequencies can be harsh on the ear and do not capture the tune of songs as accurately as I would like. To implement this feature, I would use the HTML "audio" tag.
@@ -95,7 +95,7 @@ I decided to transform the light and sound game from a competitive web experienc
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://youtu.be/9jGpBbPun8o)
 
 ## License
 
