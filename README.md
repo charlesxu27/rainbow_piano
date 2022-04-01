@@ -42,9 +42,8 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough (GIF)
 
-Youtube Video Walkthrough of a Win
+<a href="https://youtu.be/oScNZ61gZVc">Youtube Video Walkthrough of a Win</a>
 <br>
-<img src="https://youtu.be/oScNZ61gZVc">
 <br>
 GIF of a user winning at Rainbow Piano
 <br>
