@@ -42,17 +42,21 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough (GIF)
 
+Youtube Video Walkthrough of a Win
+<br>
+<img src="https://youtu.be/oScNZ61gZVc">
+<br>
 GIF of a user winning at Rainbow Piano
 <br>
-<img src="https://github.com/charlesxu27/rainbow_piano/blob/main/win_walkthrough.gif?raw=true" width=600>
+<img src="https://github.com/charlesxu27/rainbow_piano/blob/main/win_walkthrough.gif?raw=true" width=800>
 <br>
 GIF of a user losing at Rainbow Piano
 <br>
-<img src="https://github.com/charlesxu27/rainbow_piano/blob/main/loss_walkthrough.gif?raw=true" width=600>
+<img src="https://github.com/charlesxu27/rainbow_piano/blob/main/loss_walkthrough.gif?raw=true" width=800>
 <br>
 GIF of other features
 <br>
-<img src="https://github.com/charlesxu27/rainbow_piano/blob/main/misc_walkthrough.gif?raw=true" width=600>
+<img src="https://github.com/charlesxu27/rainbow_piano/blob/main/misc_walkthrough.gif?raw=true" width=800>
 
 ## Reflection Questions
 
